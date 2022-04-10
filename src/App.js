@@ -1,15 +1,18 @@
 import './App.css';
+import store from './store';
+
+console.log(store);
 
 function App() {
   return (
-    <body>
-      <div class="buttons">
+    
+      <div className="buttons">
         <h1>Title</h1>
-        <button class="add">Add Book</button>
-        <button class="mark-as-read">Mark as read</button>
-        <button class="delete">Delete</button>
+        <button className="add">Add Book</button>
+        <button className="mark-as-read">Mark as read</button>
+        <button className="delete">Delete</button>
       </div>
-    </body>
+    
   );
 }
 
