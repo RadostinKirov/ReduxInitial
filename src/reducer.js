@@ -1,16 +1,21 @@
+let lastID = 0;
+
 export default function reducer(state = [], action) {
-let lastID = 1;
 
     if (action.type == "bookAdded") {
         return [
             ...state,
             {
-                if: ++lastID,
-                description: action.playload.description
+                id: ++lastID,
+                description: action.payload.description,
+                isRead: false
             }
         ]
+    } else if (action.type == "delete") {
+        return state.filter(book => book.id !== action.payload.id);
+
     } else {
-        return [state]
+        return state;
     }
 }
 
