@@ -1,0 +1,60 @@
+h1 {
+    color: red;
+    align-self: center;
+}
+
+button {
+    margin: 10px 30px;
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.add {
+    background-color: white;
+}
+
+.mark-as-read {
+    background-color: green;
+}
+
+.delete {
+    background-color: red;
+}
+input {
+    padding: 6px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.inactive {
+    background-color: grey;
+    color: red;
+}
+
+.active {
+    background-color: lightblue;
+    color: green;
+}
+
+ul li {
+    list-style-type:none;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
